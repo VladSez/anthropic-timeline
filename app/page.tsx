@@ -80,17 +80,20 @@ export default function Home() {
         <ol className="relative border-l border-border">
           {events.map((event, i) => (
             <li key={i} className="mb-12 ml-6 last:mb-0">
-              <div className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-border bg-accent" />
-              <time className="text-sm font-medium text-muted">
-                {typeof event.date === "string"
-                  ? new Date(event.date).toLocaleString(undefined, {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                      hour: "2-digit",
-                      minute: "2-digit",
-                    })
-                  : ""}
+              <div className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-border bg-zinc-400" />
+              <time
+                className="text-sm font-medium text-zinc-600"
+                dateTime={event.date}
+              >
+                {new Date(event.date).toLocaleString(undefined, {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  timeZone: "UTC",
+                })}{" "}
+                UTC
               </time>
               <h2 className="mt-1 text-lg font-semibold leading-snug text-pretty">
                 {event.title}
@@ -98,14 +101,17 @@ export default function Home() {
               <p className="mt-2 leading-relaxed text-muted text-pretty">
                 {event.summary}
               </p>
-              <a
-                href={event.source}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-block text-sm font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
-              >
-                {event.sourceLabel}
-              </a>
+              <div className="mt-2 flex items-center text-sm text-muted gap-1">
+                <span className="font-medium">Source:</span>
+                <a
+                  href={event.source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
+                >
+                  {event.sourceLabel}
+                </a>
+              </div>
             </li>
           ))}
         </ol>
