@@ -44,13 +44,12 @@ const events = [
     sourceLabel: "The Guardian",
   },
   {
-    date: "2026-02-27T06:13:01-08:00",
+    date: "2026-02-27T14:12:04.000Z",
     title: "OpenAI raises $110B on $730B pre-money valuation",
     summary:
-      "OpenAI raises $110 billion in one of the largest private funding rounds in history — $50B from Amazon, $30B each from Nvidia and SoftBank. The company announces significant infrastructure partnerships with both Amazon and Nvidia.",
-    source:
-      "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
-    sourceLabel: "TechCrunch",
+      "OpenAI has raised $110 billion in funding from Amazon, NVIDIA, and SoftBank. The company expresses gratitude for partner support and emphasizes ongoing work to provide valuable tools.",
+    source: "https://x.com/sama/status/2027386252555919386",
+    sourceLabel: "Sam Altman on X",
   },
   {
     date: "2026-02-26T22:36:32.000Z",
