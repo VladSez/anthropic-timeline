@@ -111,7 +111,15 @@ export default function Home() {
         </ol>
 
         <footer className="mt-20 border-t border-border pt-6 text-sm text-muted">
-          {new Date().getFullYear()}
+          {new Date().getFullYear()} &middot; created by{" "}
+          <a
+            href="https://x.com/vladsazonau"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
+          >
+            Vlad Sazonau
+          </a>
         </footer>
       </main>
     </div>
