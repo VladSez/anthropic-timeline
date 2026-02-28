@@ -64,7 +64,7 @@ const events = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen justify-center bg-background px-8 py-16 sm:px-6 sm:py-24">
+    <div className="flex min-h-screen justify-center overflow-x-hidden bg-background px-8 py-16 sm:px-6 sm:py-24">
       <main className="w-full max-w-2xl">
         <header className="mb-16">
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
