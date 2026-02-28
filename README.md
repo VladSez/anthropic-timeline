@@ -2,8 +2,12 @@
 
 Events and milestones highlighting interactions between Anthropic, OpenAI, and U.S. government and defense policy.
 
+- **2026-02-28 20:38 (UTC): OpenAI details Pentagon AI deployment agreement with enhanced safeguards**  
+  OpenAI announced an agreement with the Pentagon for deploying advanced AI systems in classified environments, emphasizing that the deal has more stringent safeguards than previous agreements, including Anthropic's. The agreement enshrines three red lines: no use for mass domestic surveillance, no autonomous weapons direction, and no high-stakes automated decision making. OpenAI retains full control over its safety stack, deploys exclusively via cloud infrastructure, keeps cleared personnel in the loop, and maintains strong contractual and legal protections. OpenAI's approach aims to better protect against misuse, foster deeper democratic oversight, and prevent the erosion of AI safety guardrails. The company also requested that the same terms be offered to all AI labs and voiced opposition to Anthropic’s blacklisting as a supply chain risk. OpenAI clarified that their contract, contract language, and technical measures prevent both military use for domestic mass surveillance and the deployment of fully autonomous weapons.  
+  [OpenAI on X](https://x.com/openai/status/2027846012107456943?s=12&t=_RN2fQnPTv5buAq00Oxwaw)
+
 - **2026-02-28 02:56 (UTC): OpenAI agrees with Dept. of War to deploy models in classified network**  
-  OpenAI strikes a deal with the Pentagon to supply AI for classified military networks. Sam Altman emphasizes that the same red lines at the heart of Anthropic's dispute are enshrined in OpenAI's new partnership: "Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems."  
+  OpenAI strikes deal with Pentagon to supply AI to classified military networks. Altman says the same red lines at the heart of Anthropic's dispute are enshrined in OpenAI's new partnership: "Two of our most important safety principles are prohibitions on domestic mass surveillance and human responsibility for the use of force, including for autonomous weapon systems."  
   [Sam Altman on X](https://x.com/sama/status/2027578652477821175)
 
 - **2026-02-28 01:24 (UTC): Anthropic: Statement on the comments from Secretary of War Pete Hegseth**  

@@ -8,6 +8,16 @@ interface TimelineEvent {
 
 const events = [
   {
+    date: "2026-02-28T20:38:59.000Z",
+    title:
+      "OpenAI details Pentagon AI deployment agreement with enhanced safeguards",
+    summary:
+      "OpenAI announced an agreement with the Pentagon for deploying advanced AI systems in classified environments, emphasizing that the deal has more stringent safeguards than previous agreements, including Anthropic's. The agreement enshrines three red lines: no use for mass domestic surveillance, no autonomous weapons direction, and no high-stakes automated decision making. OpenAI retains full control over its safety stack, deploys exclusively via cloud infrastructure, keeps cleared personnel in the loop, and maintains strong contractual and legal protections. OpenAI's approach aims to better protect against misuse, foster deeper democratic oversight, and prevent the erosion of AI safety guardrails. The company also requested that the same terms be offered to all AI labs and voiced opposition to Anthropic’s blacklisting as a supply chain risk. OpenAI clarified that their contract, contract language, and technical measures prevent both military use for domestic mass surveillance and the deployment of fully autonomous weapons.",
+    source:
+      "https://x.com/openai/status/2027846012107456943?s=12&t=_RN2fQnPTv5buAq00Oxwaw",
+    sourceLabel: "OpenAI on X",
+  },
+  {
     date: "2026-02-28T02:56:35.000Z",
     title:
       "OpenAI agrees with Dept. of War to deploy models in classified network",
