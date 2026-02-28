@@ -17,6 +17,24 @@ const events = [
     sourceLabel: "Sam Altman on X",
   },
   {
+    date: "2026-02-28T01:24:31.000Z",
+    title:
+      "Anthropic: Statement on the comments from Secretary of War Pete Hegseth",
+    summary:
+      "Anthropic summarizes that after months of negotiations with the Department of War, talks broke down over two issues: their refusal to allow mass domestic surveillance or the use of their AI in fully autonomous weapons. They stress that these exceptions haven't impacted any government mission, and argue that current AI isn't reliable enough for weapons use and that domestic surveillance threatens fundamental rights. Anthropic calls the supply chain risk designation unprecedented for an American company, insists it will not alter their stance, and intends to challenge it in court. They assure customers that individual and commercial access will not be affected, and that the new restrictions would only apply to Department of War contracts.",
+    source: "https://www.anthropic.com/news/statement-comments-secretary-war",
+    sourceLabel: "Anthropic",
+  },
+
+  {
+    date: "2026-02-27T22:14:43.000Z",
+    title: "Dept. of War: Anthropic is a supply chain risk",
+    summary:
+      "Secretary of War Pete Hegseth denounces Anthropic for limiting military access to its models, calling their stance a betrayal and incompatible with American principles. Announces Anthropic will be barred from defense contracts, labeling them a national security risk. Contractors have six months to transition away.",
+    source: "https://x.com/SecWar/status/2027507717469049070?s=20",
+    sourceLabel: "Secretary of War Pete Hegseth on X",
+  },
+  {
     date: "2026-02-27T21:47:00.000Z",
     title: "U.S. government blacklists Anthropic",
     summary:
@@ -35,21 +53,13 @@ const events = [
     sourceLabel: "TechCrunch",
   },
   {
-    date: "Feb 27, 2026",
+    date: "2026-02-26T22:36:32.000Z",
     title:
-      "Anthropic: Statement on the comments from Secretary of War Pete Hegseth",
+      "Statement from Dario Amodei on our discussions with the Department of War",
     summary:
-      "Anthropic summarizes that after months of negotiations with the Department of War, talks broke down over two issues: their refusal to allow mass domestic surveillance or the use of their AI in fully autonomous weapons. They stress that these exceptions haven't impacted any government mission, and argue that current AI isn't reliable enough for weapons use and that domestic surveillance threatens fundamental rights. Anthropic calls the supply chain risk designation unprecedented for an American company, insists it will not alter their stance, and intends to challenge it in court. They assure customers that individual and commercial access will not be affected, and that the new restrictions would only apply to Department of War contracts.",
-    source: "https://www.anthropic.com/news/statement-comments-secretary-war",
-    sourceLabel: "Anthropic",
-  },
-  {
-    date: "2026-02-27T22:14:43.000Z",
-    title: "Dept. of War: Anthropic is a supply chain risk",
-    summary:
-      "Secretary of War Pete Hegseth denounces Anthropic for limiting military access to its models, calling their stance a betrayal and incompatible with American principles. Announces Anthropic will be barred from defense contracts, labeling them a national security risk. Contractors have six months to transition away.",
-    source: "https://x.com/SecWar/status/2027507717469049070?s=20",
-    sourceLabel: "Secretary of War Pete Hegseth on X",
+      "Dario Amodei, Anthropic CEO, reiterates commitment to supporting U.S. national security and highlights the company's proactive deployment of AI models for military and intelligence use. Amodei explains that Anthropic refuses to support two specific use cases—mass domestic surveillance and fully autonomous weapons—on democratic and safety grounds. He details the pressure and threats from the Department of War to remove these safeguards, including blacklisting and 'supply chain risk' labeling, but affirms Anthropic will not compromise. Anthropic expresses willingness to cooperate with a smooth transition if offboarded, while maintaining hope to continue supporting U.S. defense with responsible safeguards in place.",
+    source: "https://x.com/AnthropicAI/status/2027150818575528261",
+    sourceLabel: "Anthropic on X",
   },
 ] as const satisfies TimelineEvent[];
 
