@@ -21,3 +21,8 @@ Events and milestones highlighting interactions between Anthropic, OpenAI, and U
 - **2026-02-27 22:14 (UTC): Dept. of War: Anthropic is a supply chain risk**  
   Secretary of War Pete Hegseth denounces Anthropic for limiting military access to its models, calling their stance a betrayal and incompatible with American principles. Announces Anthropic will be barred from defense contracts, labeling them a national security risk. Contractors have six months to transition away.  
   [Secretary of War Pete Hegseth on X](https://x.com/SecWar/status/2027507717469049070?s=20)
+
+---
+
+**Contributions are welcome!**  
+If you'd like to add or update events, please feel free to submit a pull request.
