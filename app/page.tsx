@@ -64,7 +64,7 @@ const events = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen justify-center bg-background px-6 py-16 sm:py-24">
+    <div className="flex min-h-screen justify-center bg-background px-8 py-16 sm:px-6 sm:py-24">
       <main className="w-full max-w-2xl">
         <header className="mb-16">
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -92,10 +92,12 @@ export default function Home() {
                     })
                   : ""}
               </time>
-              <h2 className="mt-1 text-lg font-semibold leading-snug">
+              <h2 className="mt-1 text-lg font-semibold leading-snug text-pretty">
                 {event.title}
               </h2>
-              <p className="mt-2 leading-relaxed text-muted">{event.summary}</p>
+              <p className="mt-2 leading-relaxed text-muted text-pretty">
+                {event.summary}
+              </p>
               <a
                 href={event.source}
                 target="_blank"
