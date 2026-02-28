@@ -34,6 +34,3 @@ Events and milestones highlighting interactions between Anthropic, OpenAI, and U
 
 **Contributions are welcome!**  
 If you'd like to add or update events, please feel free to submit a pull request.
-
-<img width="1200" height="630" alt="og" src="https://github.com/user-attachments/assets/1f814252-5346-448e-8e43-8b37e0139edf" />
-

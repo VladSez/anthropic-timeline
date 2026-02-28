@@ -92,7 +92,7 @@ export default function Home() {
             <li key={i} className="mb-12 ml-6 last:mb-0">
               <div className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-border bg-zinc-400" />
               <time
-                className="text-sm font-medium text-zinc-600"
+                className="text-sm font-medium text-zinc-700"
                 dateTime={event.date}
               >
                 {new Date(event.date).toLocaleString(undefined, {
@@ -112,12 +112,12 @@ export default function Home() {
                 {event.summary}
               </p>
               <div className="mt-2 flex items-center text-sm text-muted gap-1">
-                <span className="font-medium">Source:</span>
+                <span className="font-medium text-zinc-700">Source:</span>
                 <a
                   href={event.source}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
+                  className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
                 >
                   {event.sourceLabel}
                 </a>
@@ -132,7 +132,7 @@ export default function Home() {
             href="https://x.com/vladsazonau"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
+            className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
           >
             Vlad Sazonau
           </a>
