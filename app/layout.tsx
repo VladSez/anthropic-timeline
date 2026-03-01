@@ -18,7 +18,16 @@ export const metadata: Metadata = {
     "Timeline of recent events involving Anthropic, OpenAI, and the U.S. Department of War/Defense.",
 
   openGraph: {
-    images: ["https://ik.imagekit.io/fl2lbswwo/og.png"],
+    images: [
+      {
+        url: "https://ik.imagekit.io/fl2lbswwo/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Timeline: Anthropic, OpenAI, and U.S. Government",
+        type: "image/png",
+      },
+    ],
+    siteName: "Timeline: Anthropic, OpenAI, and U.S. Government",
     title: "Timeline: Anthropic, OpenAI, and U.S. Government",
     description:
       "Timeline of recent events involving Anthropic, OpenAI, and the U.S. Department of War/Defense.",
@@ -29,7 +38,16 @@ export const metadata: Metadata = {
     title: "Timeline: Anthropic, OpenAI, and U.S. Government",
     description:
       "Timeline of recent events involving Anthropic, OpenAI, and the U.S. Department of War/Defense.",
-    images: ["https://ik.imagekit.io/fl2lbswwo/og.png"],
+    site: "https://anthropic-timeline.vercel.app",
+    images: [
+      {
+        url: "https://ik.imagekit.io/fl2lbswwo/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Timeline: Anthropic, OpenAI, and U.S. Government",
+        type: "image/png",
+      },
+    ],
   },
 };
 

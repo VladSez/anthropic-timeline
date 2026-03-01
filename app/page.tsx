@@ -8,14 +8,33 @@ interface TimelineEvent {
 
 const events = [
   {
+    date: "2026-03-01T00:13:41.000Z",
+    title:
+      "Sam Altman AMA: I'd like to answer questions about our work with the DoW and our thinking over the past few days.",
+    summary:
+      "Sam Altman opens an AMA to discuss OpenAI's partnership with the Department of War (DoW) and recent events. He answers questions about the timing of OpenAI's announcement in relation to Anthropic's deadline, stating that discussions with the DoW have been ongoing for a while and offering to clarify OpenAI's reasoning and process over recent days.",
+    source:
+      "https://x.com/sama/status/2027900042720498089?s=12&t=_RN2fQnPTv5buAq00Oxwaw",
+    sourceLabel: "Sam Altman on X",
+  },
+  {
     date: "2026-02-28T20:38:59.000Z",
     title:
       "OpenAI details Pentagon AI deployment agreement with enhanced safeguards",
     summary:
-      "OpenAI announced an agreement with the Pentagon for deploying advanced AI systems in classified environments, emphasizing that the deal has more stringent safeguards than previous agreements, including Anthropic's. The agreement enshrines three red lines: no use for mass domestic surveillance, no autonomous weapons direction, and no high-stakes automated decision making. OpenAI retains full control over its safety stack, deploys exclusively via cloud infrastructure, keeps cleared personnel in the loop, and maintains strong contractual and legal protections. OpenAI's approach aims to better protect against misuse, foster deeper democratic oversight, and prevent the erosion of AI safety guardrails. The company also requested that the same terms be offered to all AI labs and voiced opposition to Anthropic’s blacklisting as a supply chain risk. OpenAI clarified that their contract, contract language, and technical measures prevent both military use for domestic mass surveillance and the deployment of fully autonomous weapons.",
+      "OpenAI and the Pentagon announce an AI deployment deal with strict safeguards: prohibiting domestic mass surveillance, autonomous weapons, and high-stakes automated decisions. OpenAI emphasizes stronger protections than Anthropic's prior agreement and opposes Anthropic’s blacklisting, urging equal terms for all labs.",
     source:
       "https://x.com/openai/status/2027846012107456943?s=12&t=_RN2fQnPTv5buAq00Oxwaw",
     sourceLabel: "OpenAI on X",
+  },
+  {
+    date: "2026-02-28T11:44:00.000Z",
+    title:
+      "Full interview: Anthropic CEO responds to Trump order, Pentagon clash",
+    summary:
+      "Anthropic CEO Dario Amodei gives an exclusive interview to CBS News, hours after the U.S. Defense Secretary declared Anthropic a national security supply chain risk, barring military contractors from partnering with the company. Amodei calls the government’s move 'retaliatory and punitive,' and reiterates that Anthropic drew 'red lines' on mass surveillance and autonomous weapons because 'we believe that crossing those lines is contrary to American values, and we wanted to stand up for American values.'",
+    source: "https://www.youtube.com/watch?v=MPTNHrq_4LU",
+    sourceLabel: "CBS News on YouTube",
   },
   {
     date: "2026-02-28T02:56:35.000Z",
