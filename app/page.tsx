@@ -1,4 +1,7 @@
+import { CopyLinkButton } from "./components/copy-link-button";
+
 interface TimelineEvent {
+  id: string;
   date: string;
   title: string;
   summary: string;
@@ -8,6 +11,7 @@ interface TimelineEvent {
 
 const events = [
   {
+    id: "altman-ama-dow",
     date: "2026-03-01T00:13:41.000Z",
     title:
       "Sam Altman AMA: I'd like to answer questions about our work with the DoW and our thinking over the past few days.",
@@ -18,6 +22,7 @@ const events = [
     sourceLabel: "Sam Altman on X",
   },
   {
+    id: "openai-pentagon-safeguards",
     date: "2026-02-28T20:38:59.000Z",
     title:
       "OpenAI details Pentagon AI deployment agreement with enhanced safeguards",
@@ -28,6 +33,7 @@ const events = [
     sourceLabel: "OpenAI on X",
   },
   {
+    id: "amodei-cbs-interview",
     date: "2026-02-28T11:44:00.000Z",
     title:
       "Full interview: Anthropic CEO responds to Trump order, Pentagon clash",
@@ -37,6 +43,7 @@ const events = [
     sourceLabel: "CBS News on YouTube",
   },
   {
+    id: "openai-dow-classified",
     date: "2026-02-28T02:56:35.000Z",
     title:
       "OpenAI agrees with Dept. of War to deploy models in classified network",
@@ -46,6 +53,7 @@ const events = [
     sourceLabel: "Sam Altman on X",
   },
   {
+    id: "anthropic-statement-hegseth",
     date: "2026-02-28T01:24:31.000Z",
     title:
       "Anthropic: Statement on the comments from Secretary of War Pete Hegseth",
@@ -56,6 +64,7 @@ const events = [
   },
 
   {
+    id: "dow-supply-chain-risk",
     date: "2026-02-27T22:14:43.000Z",
     title: "Dept. of War: Anthropic is a supply chain risk",
     summary:
@@ -64,6 +73,7 @@ const events = [
     sourceLabel: "Secretary of War Pete Hegseth on X",
   },
   {
+    id: "us-blacklists-anthropic",
     date: "2026-02-27T21:47:00.000Z",
     title: "U.S. government blacklists Anthropic",
     summary:
@@ -73,6 +83,7 @@ const events = [
     sourceLabel: "The Guardian",
   },
   {
+    id: "openai-110b-raise",
     date: "2026-02-27T14:12:04.000Z",
     title: "OpenAI raises $110B on $730B pre-money valuation",
     summary:
@@ -81,6 +92,7 @@ const events = [
     sourceLabel: "Sam Altman on X",
   },
   {
+    id: "amodei-statement-dow",
     date: "2026-02-26T22:36:32.000Z",
     title:
       "Statement from Dario Amodei on our discussions with the Department of War",
@@ -107,8 +119,12 @@ export default function Home() {
         </header>
 
         <ol className="relative border-l border-border">
-          {events.map((event, i) => (
-            <li key={i} className="mb-12 ml-6 last:mb-0">
+          {events.map((event) => (
+            <li
+              key={event.id}
+              id={event.id}
+              className="mb-12 ml-6 scroll-mt-8 last:mb-0"
+            >
               <div className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-border bg-zinc-400" />
               <time
                 className="text-sm font-medium text-zinc-700"
@@ -130,16 +146,22 @@ export default function Home() {
               <p className="mt-2 leading-relaxed text-muted text-pretty">
                 {event.summary}
               </p>
-              <div className="mt-2 flex items-center text-sm text-muted gap-1">
-                <span className="font-medium text-zinc-700">Source:</span>
-                <a
-                  href={event.source}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
-                >
-                  {event.sourceLabel}
-                </a>
+              <div className="flex items-center gap-3">
+                <div className="mt-2 flex items-center gap-3 text-sm text-muted">
+                  <span className="font-medium text-zinc-700">Source:</span>
+                  <a
+                    href={event.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
+                  >
+                    {event.sourceLabel}
+                  </a>
+                </div>
+                <span className="text-border">·</span>
+              </div>
+              <div className="mt-3">
+                <CopyLinkButton eventId={event.id} />
               </div>
             </li>
           ))}
