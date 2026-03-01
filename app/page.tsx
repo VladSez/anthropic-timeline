@@ -146,19 +146,16 @@ export default function Home() {
               <p className="mt-2 leading-relaxed text-muted text-pretty">
                 {event.summary}
               </p>
-              <div className="flex items-center gap-3">
-                <div className="mt-2 flex items-center gap-1 text-sm text-muted">
-                  <span className="font-medium text-zinc-700">Source:</span>
-                  <a
-                    href={event.source}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
-                  >
-                    {event.sourceLabel}
-                  </a>
-                </div>
-                <span className="text-border">·</span>
+              <div className="mt-2 flex items-center gap-1 text-sm text-muted flex-wrap">
+                <span className="font-medium text-zinc-700">Source:</span>
+                <a
+                  href={event.source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
+                >
+                  {event.sourceLabel}
+                </a>
               </div>
               <div className="mt-3">
                 <CopyLinkButton eventId={event.id} />
