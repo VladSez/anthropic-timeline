@@ -147,7 +147,7 @@ export default function Home() {
                 {event.summary}
               </p>
               <div className="flex items-center gap-3">
-                <div className="mt-2 flex items-center gap-3 text-sm text-muted">
+                <div className="mt-2 flex items-center gap-1 text-sm text-muted">
                   <span className="font-medium text-zinc-700">Source:</span>
                   <a
                     href={event.source}
