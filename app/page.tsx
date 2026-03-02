@@ -186,12 +186,14 @@ export default function Home() {
                   )}
                   <span
                     className={`relative h-2.5 w-2.5 rounded-full border border-border ${
-                      isFirst ? "bg-zinc-700" : "bg-zinc-400"
+                      isFirst ? "bg-zinc-900" : "bg-zinc-400"
                     }`}
                   />
                 </div>
                 <time
-                  className="text-sm font-medium text-zinc-700"
+                  className={`text-sm font-medium ${
+                    isFirst ? "text-zinc-800" : "text-zinc-500"
+                  }`}
                   dateTime={event.date}
                 >
                   {new Date(event.date).toLocaleString(undefined, {
