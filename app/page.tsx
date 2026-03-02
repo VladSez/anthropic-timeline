@@ -131,6 +131,28 @@ const events = [
     source: "https://x.com/AnthropicAI/status/2027150818575528261",
     sourceLabel: "Anthropic on X",
   },
+  {
+    id: "anthropic-ditches-safety-promise",
+    date: "2026-02-25T19:29:00.000Z",
+    title:
+      "Anthropic ditches its core safety promise in the middle of an AI red line fight with the Pentagon",
+    summary:
+      "Anthropic has replaced its strict Responsible Scaling Policy with a more flexible, nonbinding safety framework, citing the need to stay competitive as AI development accelerates. The change comes amid pressure from the Pentagon to loosen safeguards, though Anthropic says the revision is unrelated. The new ‘Frontier Safety Roadmap’ swaps hard commitments for public goals, aiming for transparency and adaptability, but critics worry this could weaken AI safety standards. Anthropic insists it will not allow its AI to be used for weapons or mass surveillance, despite outside pressures.",
+    source:
+      "https://edition.cnn.com/2026/02/25/tech/anthropic-safety-policy-change",
+    sourceLabel: "CNN",
+  },
+  {
+    id: "pentagon-threatens-anthropic-pariah",
+    date: "2026-02-24T16:38:00.000Z",
+    title:
+      "Pentagon threatens to make Anthropic a pariah if it refuses to drop AI guardrails",
+    summary:
+      "Defense Secretary Hegseth tells Anthropic CEO Dario Amodei the Pentagon will terminate their $200M contract and blacklist the company if it doesn't lift restrictions on its AI model for all lawful military uses by Friday. Hegseth also threatens to invoke the Defense Production Act, compelling Anthropic to work with the Pentagon. Anthropic refuses to drop guardrails against AI-controlled weapons and mass domestic surveillance, citing reliability and legal concerns. The Pentagon asserts their request is legal and necessary. The dispute could block Anthropic from government and defense business, benefiting competitors like Musk's xAI. Meeting between Hegseth and Amodei described as cordial; talks ongoing.",
+    source:
+      "https://edition.cnn.com/2026/02/24/tech/hegseth-anthropic-ai-military-amodei",
+    sourceLabel: "CNN",
+  },
 ] as const satisfies TimelineEvent[];
 
 export default function Home() {
@@ -207,7 +229,22 @@ export default function Home() {
           })}
         </ol>
 
-        <footer className="mt-20 border-t border-border pt-6 text-sm text-muted">
+        <div className="mt-20 rounded-lg border border-border bg-zinc-50 px-6 py-5">
+          <p className="text-sm leading-relaxed text-muted">
+            Have an event to add?{" "}
+            <a
+              href="https://github.com/VladSez/anthropic-timeline"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
+            >
+              Submit a pull request on GitHub
+            </a>{" "}
+            - contributions are welcome.
+          </p>
+        </div>
+
+        <footer className="mt-8 border-t border-border pt-6 text-sm text-muted">
           {new Date().getFullYear()} &middot; created by{" "}
           <a
             href="https://x.com/vladsazonau"
@@ -217,6 +254,20 @@ export default function Home() {
           >
             Vlad Sazonau
           </a>
+          <div className="flex items-center gap-2 mt-2">
+            <span className="text-balance">
+              Check out my other project:{" "}
+              <a
+                href="https://easyinvoicepdf.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
+              >
+                EasyInvoicePDF.com
+              </a>{" "}
+              &ndash; a free and open-source invoice generator.
+            </span>
+          </div>
         </footer>
       </main>
     </div>
