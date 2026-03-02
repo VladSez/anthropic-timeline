@@ -11,6 +11,36 @@ interface TimelineEvent {
 
 const events = [
   {
+    id: "treasury-terminates-anthropic",
+    date: "2026-03-02T15:57:31.000Z",
+    title:
+      "U.S. Treasury ordered by President Trump to terminate use of Anthropic products",
+    summary:
+      "Acting on President Trump's directive, the U.S. Treasury announces it is immediately terminating the use of all Anthropic products, including Claude. The department emphasizes that government tools must serve the public interest and states that no private company will dictate national security terms.",
+    source:
+      "https://x.com/secscottbessent/status/2028499953283117283?s=12&t=_RN2fQnPTv5buAq00Oxwaw",
+    sourceLabel: "Sec. Scott Bessent on X",
+  },
+  {
+    id: "aws-middle-east-outage",
+    date: "2026-03-02T11:09:55.000Z",
+    title: "AWS outage in Middle East after air strike; Claude also down",
+    summary: `An air strike causes a significant AWS outage in the Middle East, resulting in the loss of a second availability zone and Amazon S3 failures. On the same day, Claude's services went down as well. This incident highlights the vulnerability of cloud infrastructure and AI services to regional instability. AWS outage: https://www.reuters.com/world/middle-east/amazons-cloud-unit-reports-fire-after-objects-hit-uae-data-center-2026-03-01 Claude incident: https://status.claude.com/incidents/0ghc53zpsfmt`,
+    source: "https://x.com/initjean/status/2028427577799401621",
+    sourceLabel: "Jean inits on X",
+  },
+  {
+    id: "us-iran-anthropic-ai-strikes",
+    date: "2026-03-01T01:51:00.000Z",
+    title:
+      "US uses Anthropic AI, B-2 bombers and suicide drones in Iran strikes",
+    summary:
+      "According to a source familiar with the situation, the Pentagon employed Anthropic's artificial intelligence, including Claude tools, during a strike on Iran. The attack occurred a day after the U.S. designated Anthropic a supply chain risk and announced the termination of its government partnerships. The precise role of the AI in the operation is unclear, as both the Pentagon and Anthropic declined to comment. Anthropic's AI has been widely deployed across the intelligence community and armed services, notably through a classified cloud partnership with Amazon.",
+    source:
+      "https://www.reuters.com/business/aerospace-defense/us-deploys-suicide-drones-tomahawk-missiles-iran-strikes-2026-03-01/",
+    sourceLabel: "Reuters",
+  },
+  {
     id: "altman-ama-dow",
     date: "2026-03-01T00:13:41.000Z",
     title:
@@ -118,50 +148,63 @@ export default function Home() {
           </p>
         </header>
 
-        <ol className="relative border-l border-border">
-          {events.map((event) => (
-            <li
-              key={event.id}
-              id={event.id}
-              className="mb-12 ml-6 scroll-mt-8 last:mb-0"
-            >
-              <div className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-border bg-zinc-400" />
-              <time
-                className="text-sm font-medium text-zinc-700"
-                dateTime={event.date}
+        <ol className="relative border-l border-zinc-300/80">
+          {events.map((event, i) => {
+            const isFirst = i === 0;
+
+            return (
+              <li
+                key={event.id}
+                id={event.id}
+                className="mb-12 ml-6 scroll-mt-8 last:mb-0"
               >
-                {new Date(event.date).toLocaleString(undefined, {
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
-                  hour: "2-digit",
-                  minute: "2-digit",
-                  timeZone: "UTC",
-                })}{" "}
-                UTC
-              </time>
-              <h2 className="mt-1 text-lg font-semibold leading-snug text-pretty">
-                {event.title}
-              </h2>
-              <p className="mt-2 leading-relaxed text-muted text-pretty">
-                {event.summary}
-              </p>
-              <div className="mt-2 flex items-center gap-1 text-sm text-muted flex-wrap">
-                <span className="font-medium text-zinc-700">Source:</span>
-                <a
-                  href={event.source}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
+                <div className="absolute -left-[5px] mt-1.5 flex h-2.5 w-2.5 items-center justify-center">
+                  {isFirst && (
+                    <span className="absolute h-full w-full animate-ping rounded-full bg-zinc-400 opacity-75" />
+                  )}
+                  <span
+                    className={`relative h-2.5 w-2.5 rounded-full border border-border ${
+                      isFirst ? "bg-zinc-700" : "bg-zinc-400"
+                    }`}
+                  />
+                </div>
+                <time
+                  className="text-sm font-medium text-zinc-700"
+                  dateTime={event.date}
                 >
-                  {event.sourceLabel}
-                </a>
-              </div>
-              <div className="mt-3">
-                <CopyLinkButton eventId={event.id} />
-              </div>
-            </li>
-          ))}
+                  {new Date(event.date).toLocaleString(undefined, {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    timeZone: "UTC",
+                  })}{" "}
+                  UTC
+                </time>
+                <h2 className="mt-1 text-lg font-semibold leading-snug text-pretty">
+                  {event.title}
+                </h2>
+                <p className="mt-2 leading-relaxed text-muted text-pretty">
+                  {event.summary}
+                </p>
+                <div className="mt-2 flex items-center gap-1 text-sm text-muted flex-wrap">
+                  <span className="font-medium text-zinc-700">Source:</span>
+                  <a
+                    href={event.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-foreground underline decoration-[#63666a] underline-offset-4 transition-colors hover:decoration-foreground"
+                  >
+                    {event.sourceLabel}
+                  </a>
+                </div>
+                <div className="mt-3">
+                  <CopyLinkButton eventId={event.id} />
+                </div>
+              </li>
+            );
+          })}
         </ol>
 
         <footer className="mt-20 border-t border-border pt-6 text-sm text-muted">
