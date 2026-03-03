@@ -11,6 +11,16 @@ interface TimelineEvent {
 
 const events = [
   {
+    id: "openai-clarifies-dow-deal-civil-liberties",
+    date: "2026-03-03T01:15:25.000Z",
+    title:
+      "Sam Altman: We’re Updating Our Agreement with the U.S. Department of Defense to Clarify Our Principles",
+    summary:
+      "Sam Altman shares an internal update outlining key amendments to OpenAI's agreement with the Department of War (DoW). The deal now explicitly bars intentional use of OpenAI's AI systems for domestic surveillance of U.S. persons or nationals, including tracking with commercially acquired data, emphasizing protection of civil liberties. The DoW affirms OpenAI's services will not be used by DoW intelligence agencies (e.g., NSA) without further contract modifications. Altman stresses OpenAI’s commitment to democratic processes, technical safety, and learning from communication missteps. He also advocates for Anthropic to get equal treatment and announces an upcoming All Hands meeting for further discussion.",
+    source: "https://x.com/sama/status/2028640354912923739",
+    sourceLabel: "Sam Altman on X",
+  },
+  {
     id: "treasury-terminates-anthropic",
     date: "2026-03-02T15:57:31.000Z",
     title:
