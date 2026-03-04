@@ -11,6 +11,16 @@ interface TimelineEvent {
 
 const events = [
   {
+    id: "anthropic-revenue-pentagon-feud",
+    date: "2026-03-03T23:18:23.563Z",
+    title: "Anthropic nears $20 billion revenue run rate amid Pentagon feud",
+    summary:
+      "Anthropic is on pace for an annual revenue run rate approaching $20 billion, more than doubling since late 2025 due to strong adoption of its AI products, including Claude Code. The company's valuation stands at $380 billion after recent viral success with its products. However, a recent clash with the Pentagon over AI safeguards—culminating in Defense Secretary Hegseth designating Anthropic a supply-chain risk—has halted Anthropic’s US government sales and may impact relationships with other firms. Anthropic called the move 'legally unsound' and is prepared to challenge it in court. While the business impact is uncertain, Anthropic’s main app recently topped Apple's download charts, signaling growing public support amid the standoff.",
+    source:
+      "https://m.economictimes.com/tech/artificial-intelligence/anthropic-nears-20-billion-revenue-run-rate-amid-pentagon-feud/amp_articleshow/129001605.cms",
+    sourceLabel: "The Economic Times",
+  },
+  {
     id: "openai-clarifies-dow-deal-civil-liberties",
     date: "2026-03-03T01:15:25.000Z",
     title:
