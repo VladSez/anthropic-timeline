@@ -11,6 +11,17 @@ interface TimelineEvent {
 
 const events = [
   {
+    id: "anthropic-ceo-openai-military-claims",
+    date: "2026-03-04T14:40:05-08:00",
+    title:
+      "Anthropic CEO Dario Amodei calls OpenAI’s messaging around military deal ‘straight up lies’, report says",
+    summary:
+      "Anthropic CEO Dario Amodei strongly criticized OpenAI and its CEO, Sam Altman, calling OpenAI’s communications about their recent Department of Defense (DoD) deal 'straight up lies.' In a memo to staff, Amodei referred to OpenAI’s actions as 'safety theater,' asserting Anthropic had refused a DoD deal over concerns about mass surveillance and autonomous weaponry. Despite Anthropic’s insistence on explicit safeguards, the DoD ultimately signed with OpenAI, which claimed similar protections. Amodei accused Altman of misleadingly portraying himself as a peacemaker. Critics noted the definition of 'lawful use' could shift with changing law, and public perception sided with Anthropic, as ChatGPT uninstalls spiked after the OpenAI-DoD agreement.",
+    source:
+      "https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/",
+    sourceLabel: "TechCrunch",
+  },
+  {
     id: "anthropic-revenue-pentagon-feud",
     date: "2026-03-03T23:18:23.563Z",
     title: "Anthropic nears $20 billion revenue run rate amid Pentagon feud",
