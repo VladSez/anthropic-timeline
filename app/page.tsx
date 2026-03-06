@@ -11,6 +11,16 @@ interface TimelineEvent {
 
 const events = [
   {
+    id: "anthropic-statement-department-war",
+    date: "2026-03-06T00:45:00.000Z",
+    title:
+      "Where things stand with the Department of War: Statement from Dario Amodei",
+    summary:
+      "Anthropic received official notice from the Department of War designating it as a supply chain risk to U.S. national security, a move CEO Dario Amodei calls legally unsound and vows to challenge in court. The designation specifically impacts Anthropic products used directly in Department of War contracts, not broader commercial customers. Dario Amodei emphasized that the law requires minimal disruption and does not cut off unrelated uses. He reiterated Anthropic’s opposition to AI for autonomous weapons and mass domestic surveillance, and apologized for the tone of an internal memo leaked to the press, clarifying that it no longer reflects his current views. Despite the designation, Anthropic will continue to provide services and support to the Department of War and the national security community during the transition period, stressing shared commitment to U.S. national security.",
+    source: "https://www.anthropic.com/news/where-stand-department-war",
+    sourceLabel: "Anthropic News",
+  },
+  {
     id: "anthropic-ceo-openai-military-claims",
     date: "2026-03-04T14:40:05-08:00",
     title:
