@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Timeline: Anthropic, OpenAI, and U.S. Government",
   description:
     "Timeline of recent events involving Anthropic, OpenAI, and the U.S. Department of War/Defense.",
-
+  metadataBase: new URL("https://anthropic-timeline.vercel.app"),
   openGraph: {
     images: [
       {
@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     description:
       "Timeline of recent events involving Anthropic, OpenAI, and the U.S. Department of War/Defense.",
     type: "website",
+    url: "https://anthropic-timeline.vercel.app",
   },
   twitter: {
     card: "summary_large_image",
