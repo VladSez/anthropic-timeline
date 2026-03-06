@@ -22,7 +22,7 @@ const events = [
   },
   {
     id: "pentagon-notifies-anthropic-supply-chain-risk",
-    date: "2026-03-05T19:58:14-05:00",
+    date: "2026-03-05T18:22:41Z",
     title: "Pentagon Officially Notifies Anthropic It Is a ‘Supply Chain Risk’",
     summary:
       "The U.S. Defense Department formally notified Anthropic that it is considered a 'supply chain risk,' a designation that could block Anthropic from doing business with the U.S. government. The Pentagon sent a formal letter confirming the designation, prompting Anthropic to consider legal action. Disagreement stemmed from Anthropic’s insistence on safeguards to prevent its A.I. from being used for domestic surveillance or autonomous lethal weapons, while the Pentagon demanded freedom to use the technology for any lawful purpose. Without an agreement, Defense Secretary Hegseth declared Anthropic a national security risk and barred military contractors from commercial dealings with the company. As Anthropic weighs a lawsuit, competitors like OpenAI and xAI have signed deals with the Pentagon, with OpenAI recently updating its agreement to add protections against mass surveillance.",
@@ -32,7 +32,7 @@ const events = [
   },
   {
     id: "anthropic-ceo-openai-military-claims",
-    date: "2026-03-04T14:40:05-08:00",
+    date: "2026-03-04T22:40:05Z",
     title:
       "Anthropic CEO Dario Amodei calls OpenAI’s messaging around military deal ‘straight up lies’, report says",
     summary:
